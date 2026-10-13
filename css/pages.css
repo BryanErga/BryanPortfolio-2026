@@ -720,6 +720,11 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 3.5rem clamp(2rem, 6vw, 5rem);
 }
+@media (min-width: 901px) {
+  .cv[aria-label="Skills and languages"] .cv-grid > div:first-child {
+    transform: translateY(-clamp(7rem, 11vw, 12rem));
+  }
+}
 .cv-block__title {
   margin-bottom: 1.5rem;
   font-size: clamp(2.8rem, 6vw, 4.2rem);
